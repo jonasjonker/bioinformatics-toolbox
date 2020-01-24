@@ -1,6 +1,13 @@
 #!/bin/bash
 #
 # Blueprint for common string operations using awk, grep and sed.
+#
+# Use grep for pattern searching.
+# For simple string replacement, use sed.
+# grep | sed pipelines combine well.
+#
+# For more complex tasks use awk (or a scripting language). Sed regex has 
+# limited capabilities. 
 
 ################################################################################
 # Read a file line by line
