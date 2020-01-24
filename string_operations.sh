@@ -117,3 +117,4 @@ grep_exampes() {
   echo $(echo "$TAB_SEP" | grep -Eo "s[eto]{3}sa")
   echo $(echo "$TAB_SEP" | grep -Po "(?<=se)to(?=sa)")
 }
+
