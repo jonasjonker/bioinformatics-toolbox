@@ -8,6 +8,7 @@ _In this document keystrokes will be indicated like this:_ [**ESC**] _in case of
 specific keys, or like_ [**\<somekey>**] _for general cases. key combinations will be represented like_ [**dd**] _or like_ [**CTRL**+**r**] _to prevent ambiguity._
 
 Vim has four modes:
+
 |  modes  | key       |
 |    ---: | :---      |
 | normal  | [**ESC**] |
