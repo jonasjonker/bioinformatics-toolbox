@@ -7,7 +7,7 @@ The power of Vim lies in the fact that it is very _good at editing_ files.
 _In this document keystrokes will be indicated like this:_ [**ESC**] _in case of
 specific keys, or like_ [**\<somekey>**] _for general cases. key combinations will be represented like_ [**dd**] _or like_ [**CTRL**+**r**] _to prevent ambiguity._
 
-Vim has four modes:
+###### switch mode
 
 |  modes  | key       |
 |    ---: | :---      |
@@ -19,49 +19,57 @@ Vim has four modes:
 What can be confusing for beginners is that you start in _normal mode_, but that
 *you can't write text in normal mode.* This might seem weird at first, it is actually quite usefull, since editing is mostly done in _normal mode_. Before we dive into how _normal_ mode works
 
+###### usefull commands
+
+|  command          | key combo |
+|    ---:           | :---      |
+| quit              | [**:q**]  |
+| save              | [**:w**]  |
+| save & quit       | [**:wq**] |
+| quit without save | [**:q!**] |
 
 
 ## movement
-h   - left
-j   - down
-k   - up
-l   - right
+###### relative position
 
-w   - to start of Word on the right
-e   - to End of word on the right
-b   - to start of word on the left
-ge  - to end of word on the left
-zz  - center of line
+|  unit           | left      | down      | up        | right     |
+|    ---:         | ---       | ---       | ---       | ---       |
+| character       | [**h**]   | [**j**]   | [**k**]   | [**l**]   |
+| Word (start)    | [**b**]   |           |           | [**w**]   |
+| Word (end)      | [**e**]   |           |           | [**ge**]  |
+| line            | [**^**]   |           |           | [**$**]   |
+| file            |           | [**gg**]  | [**G**]   |           |
+| sentence        |           | [**(**]   | [**)**]   |           |
+| paragraph       |           | [**{**]   | [**}**]   |           |
+| section (start) |           | [**\[\[**]| [**\]\]**]|           |
+| section (end)   |           | [**\[\]**]| [**\]\[**]|           |
+| next bracket    |           | [**%**]   | [**%**]   |           |
 
-L   - go to bottom screen
-M   - go to middel screen
-H   - go to top screen
+The power of vim is that movements can be combined numbers and commands.
+For example:
+```Vim
+20j " will move you down 20 line
+d4w " will delete 4 words to your right.
+c2{ " will delete the next 2 paragraphs. 
+```
 
+###### abolute position
 
-^   - start of line
-$   - end of line
+|  position       | key       |
+|    ---:         | ---       |
+| bottom screen   | [**L**]   |
+| middel screen   | [**M**]   |
+|  top screen     | [**L**]   |
+| middle line     | [**zz**]  |
 
-gg  - top of file
-G   - bottom of file
+###### specific position
 
-{   - paragraph up
-}   - paragraph down
-(   - sentence up
-)   - sentence down
-[[  - previous sectiom
-]]  - next section
-[]  - end of previous section
-][  - en of next section
-
-%   - toggle between brackets
-:<#>- go to line number
-
-t   - to <letter>
-;   - repeat
-/   - to <string>
-*   - to next occurence of selected word
-n   - repeat ; or *
-
+|  specified ...  | next      |  previous |  repeat   |
+|    ---:         | ---       | ---       | ---       |
+| character       | [**t**]   | [**f**]   | [**;**]   |
+| string          | [**/**]   | [**?**]   | [**n**]   |
+| selection       | [**\***]  | [**#**]   | [**n**]   |
+| line            | [**:\<number>**]  |   |           |
 
 ## inner keyword
 diw - delete in word
