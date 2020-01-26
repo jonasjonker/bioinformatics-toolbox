@@ -1,6 +1,5 @@
 -- MySQL dump 10.13  Distrib 5.7.23, for Linux (x86_64)
 --
--- Host: jonasjonker.mysql.pythonanywhere-services.com    Database: jonasjonker$PracticeDB
 -- ------------------------------------------------------
 -- Server version	5.6.40-log
 
@@ -16,7 +15,7 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Current Database: `jonasjonker$PracticeDB`
+-- Current Database: `PracticeDB`
 --
 
 CREATE DATABASE `PracticeDB`; 
