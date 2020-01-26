@@ -1,0 +1,27 @@
+################################################################################
+#
+# databases README 
+#
+################################################################################
+
+This directory contains 4 files:
+
+- dump.sql
+  A dump file which can be used to create a MySQL clone of the database used for 
+  the databasemanagement course. 
+
+- dump-sqlite-compatible.sql
+  A dump file which can be used to create a SQLite clone of the database used 
+  for the databasemanagement course. To create this database, all non compatible
+  code from the MySQL dump file was deleted, which means that it misses some
+  functionalities. 
+
+- examples.sql
+  Some SQL examples. All examples should work in MySQL. All examples exept for 
+  RIGHT INNER JOIN should work in sqlite as well. LEFT INNER JOIN should work
+  in SQLite as well. The examples in the book with FULL OUTER JOIN functions 
+  don't work in MySQL and SQLite.
+
+- practice_db.sqlite3
+  A ready to use SQLite database. Just run the command 'sqlite3 practice_db.sqlite3'
+  to use it. Just use a few queries from examples.sql to test it. 

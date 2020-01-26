@@ -7,7 +7,7 @@ The power of Vim lies in the fact that it is very _good at editing_ files.
 _In this document keystrokes will be indicated like this:_ [**ESC**] _in case of
 specific keys, or like_ [**\<somekey>**] _for general cases. key combinations will be represented like_ [**dd**] _or like_ [**CTRL**+**r**] _to prevent ambiguity._
 
-###### switch mode
+##### switch mode
 
 |  modes  | key       |
 |    ---: | :---      |
@@ -19,7 +19,7 @@ specific keys, or like_ [**\<somekey>**] _for general cases. key combinations wi
 What can be confusing for beginners is that you start in _normal mode_, but that
 *you can't write text in normal mode.* This might seem weird at first, it is actually quite usefull, since editing is mostly done in _normal mode_. Before we dive into how _normal_ mode works
 
-###### usefull commands
+##### usefull commands
 
 |  command          | key combo |
 |    ---:           | :---      |
@@ -30,7 +30,7 @@ What can be confusing for beginners is that you start in _normal mode_, but that
 
 
 ## movement
-###### relative position
+##### relative position
 
 |  unit           | left      | down      | up        | right     |
 |    ---:         | ---       | ---       | ---       | ---       |
@@ -50,10 +50,10 @@ For example:
 ```Vim
 20j " will move you down 20 line
 d4w " will delete 4 words to your right.
-c2{ " will delete the next 2 paragraphs. 
+c2{ " will change the next 2 paragraphs. 
 ```
 
-###### abolute position
+##### abolute position
 
 |  position       | key       |
 |    ---:         | ---       |
@@ -62,7 +62,7 @@ c2{ " will delete the next 2 paragraphs.
 |  top screen     | [**L**]   |
 | middle line     | [**zz**]  |
 
-###### specific position
+##### specific position
 
 |  specified ...  | next      |  previous |  repeat   |
 |    ---:         | ---       | ---       | ---       |
@@ -71,7 +71,7 @@ c2{ " will delete the next 2 paragraphs.
 | selection       | [**\***]  | [**#**]   | [**n**]   |
 | line            | [**:\<number>**]  |   |           |
 
-## inner keyword
+## operations 
 diw - delete in word
 ci" - change in quotes
 dip - delete paragraph
